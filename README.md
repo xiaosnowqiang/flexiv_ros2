@@ -92,10 +92,10 @@ Open the bashrc file and add the:
 source /opt/ros/foxy/setup.bash
 source ~/flexiv_ros2_ws/install/setup.bash
 ```
-into the bottom of the bashrc file content like below
-
-![image](https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/bashrc_modify.jpg)
-
+into the bottom of the bashrc file content like below picture line 119 and 120.
+<div align=center>
+<img src="https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/bashrc_modify.jpg" width="280" height="105"> 
+</div>
 Then we don't need run these two command everytime when open a new terminal for source purpose.
 
 ## Usage
@@ -134,8 +134,9 @@ Then we don't need run these two command everytime when open a new terminal for 
 
         You can change the joint position goals in `flexiv_bringup/config/joint_trajectory_position_publisher.yaml`.
 The robot will move like below picture：
-
-![image](https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/GIFfxi.gif)
+<div align=center>
+    <img src="https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/GIFfxi.gif" width="380" height="305"> 
+</div>
 
 **NOTE**: Press Ctrol+c for stop the robot Moving,Ctrol+z may break the robot for Start configuration checked.
 
