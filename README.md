@@ -86,12 +86,18 @@ source ~/flexiv_ros2_ws/install/setup.bash
 **NOTE2**:We can also add these two commands to the bashrc file by：
 ```bash
 sudo gedit ~/.bashrc
+```
 Open the bashrc file and add the:
+```bash
 source /opt/ros/foxy/setup.bash
 source ~/flexiv_ros2_ws/install/setup.bash
-into the bottom of the file content：
-![图片](https://user-images.githubusercontent.com/35529216/192215118-0539bb18-9246-4395-8ab0-e7b2203776b5.png)
-Then we don't need run these two command everytime when open a new terminal.
+```
+into the bottom of the bashrc file content like below
+
+![image](https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/bashrc_modify.jpg)
+
+Then we don't need run these two command everytime when open a new terminal for source purpose.
+
 ## Usage
 
 **NOTE**: the instruction below is only a quick reference, see the [Flexiv ROS2 Documentation](https://rdk.flexiv.com/manual/ros2_packages.html) for more information.
@@ -128,7 +134,10 @@ Then we don't need run these two command everytime when open a new terminal.
 
         You can change the joint position goals in `flexiv_bringup/config/joint_trajectory_position_publisher.yaml`.
 The robot will move like below picture：
-![GIFfxi](https://user-images.githubusercontent.com/35529216/192216887-d98fcdbe-d104-4dd2-aa7d-b511b9574eeb.gif)
+
+![image](https://github.com/xiaosnowqiang/flexiv_ros2/blob/main/DemoImage/GIFfxi.gif)
+
+**NOTE**: Press Ctrol+c for stop the robot Moving,Ctrol+z may break the robot for Start configuration checked.
 
    - To test another controller, define it using the `robot_controller` launch argument, for example the `joint_impedance_controller`:
 
